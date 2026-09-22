@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simba tools — Unity Editor Tools</title>
+  <meta name="description" content="Practical Unity Editor tools for asset organization, review workflows and URP compatibility.">
+  <meta property="og:title" content="Simba tools — Unity Editor Tools">
+  <meta property="og:description" content="Practical Unity Editor tools for asset organization, review workflows and URP compatibility.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/simba-tools-logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="brand" href="#top">
+        <img src="assets/images/simba-tools-logo.jpg" alt="Simba tools logo, a blue cube with a lion profile" width="48" height="48">
+        <span>Simba tools</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Primary">
+        <a href="#asset-library-organizer">Product</a>
+        <a href="#features">Features</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Simba tools</p>
+        <h1>Practical Unity Editor tools that save developers time.</h1>
+        <p class="lede">Focused tools for organizing assets, reviewing project content, and improving Unity Editor workflows without taking control away from the developer.</p>
+        <div class="actions">
+          <a class="button" href="#asset-library-organizer">View Asset Library Organizer</a>
+          <a class="button button-quiet" href="mailto:mathisdeschamps999@gmail.com">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="asset-library-organizer">
+      <div class="wrap">
+        <p class="eyebrow">Editor tool</p>
+        <h2>Asset Library Organizer &amp; URP Inspector</h2>
+        <p class="lede">Organize large Unity asset libraries, review uncertain assets, and inspect URP compatibility without modifying your source files.</p>
+        <ul class="badges">
+          <li>Unity Editor Tool</li>
+          <li>URP Optional</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="solution" id="organize">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">01</p>
+          <h2>Organize large asset libraries automatically</h2>
+          <p>Scan supported assets across your Unity project and classify them into practical categories such as Environments, Props, Characters, Vegetation, Vehicles and Materials.</p>
+          <p>The original source assets stay in place. Asset Library Organizer builds a separate catalog instead of reorganizing your project behind your back.</p>
+          <p class="callout">Turn an unstructured Assets folder into a classified catalog.</p>
+        </div>
+        <figure>
+          <img src="assets/images/01_Main_Interface.jpg" alt="Real Unity Editor screenshot of Asset Library Organizer. The catalogue lists Chair, DemoSwatch, Crate, House, DemoStandard and Widget, and the House card shows Environments/Buildings.">
+          <figcaption>Catalogue view. Real in-editor screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="solution solution-alt" id="review">
+      <div class="wrap split reverse">
+        <div>
+          <p class="eyebrow">02</p>
+          <h2>Review uncertain assets instead of silently misclassifying them</h2>
+          <p>Automatic classification is not always certain.</p>
+          <p>Assets with ambiguous results can be sent to Needs Review, giving the developer a clear place to inspect them instead of forcing a questionable classification.</p>
+          <p class="callout">Find uncertain assets before they become organizational mistakes.</p>
+        </div>
+        <figure>
+          <img src="assets/images/02_Needs_Review.jpg" alt="Real Unity Editor screenshot of Asset Library Organizer with Needs Review only enabled. Widget is selected and proposed as Needs Review, with Validate, Ignore and Return to rules.">
+          <figcaption>Needs Review filter and decision buttons. Real in-editor screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="solution" id="control">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">03</p>
+          <h2>Keep human control over automatic classification</h2>
+          <p>Automatic, Validated and Ignored decisions allow developers to combine automation with manual control.</p>
+          <p>Categories, tags and classification rules remain visible and editable, while manual decisions persist between sessions.</p>
+          <p class="callout">Automate repetitive work without giving up control.</p>
+        </div>
+        <figure>
+          <img src="assets/images/05_Classification_Rules.jpg" alt="Real Unity Editor screenshot of the Asset Classification Rules inspector beside a Widget card. Visible fields include Minimum Score, Ambiguity Margin, excluded paths and categories.">
+          <figcaption>Classification rules asset and a catalogue card. Real in-editor screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="solution solution-alt" id="urp">
+      <div class="wrap split reverse">
+        <div>
+          <p class="eyebrow">04</p>
+          <h2>Inspect URP compatibility before conversion</h2>
+          <p>Use the URP inspection workflow to identify materials and assets that are ready, automatically convertible or require manual review.</p>
+          <p>URP remains optional and is not added as a mandatory package dependency.</p>
+          <p class="callout">See what needs attention before starting URP conversion work.</p>
+        </div>
+        <figure>
+          <img src="assets/images/03_URP_Issues_Summary.jpg" alt="Real Unity Editor screenshot of the URP Issues Summary. It groups Standard and Universal Render Pipeline/Lit, and notes a separate URP copy for DemoStandard with the source unchanged.">
+          <figcaption>URP Issues Summary. Real in-editor screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="solution" id="copies">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">05</p>
+          <h2>Create URP copies without overwriting source materials</h2>
+          <p>When automatic conversion is available, Asset Library Organizer creates separate readable URP material copies such as:</p>
+          <p><code>MaterialName_ALO_URP.mat</code></p>
+          <p>The original material remains unchanged.</p>
+          <p class="callout">Convert safely while keeping your originals intact.</p>
+        </div>
+        <figure>
+          <img src="assets/images/03_URP_Issues_Summary.jpg" alt="The same real URP Issues Summary screenshot, showing DemoStandard marked URP Ready with the note that a separate URP copy is available and the source is unchanged.">
+          <figcaption>Same real URP summary. It is the capture that shows a separate copy while the source stays unchanged. No extra screen was created.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="solution solution-alt" id="taxonomy">
+      <div class="wrap split reverse">
+        <div>
+          <p class="eyebrow">Taxonomy</p>
+          <h2>Improve your taxonomy over time</h2>
+          <p>Saved review metadata can be analyzed to generate taxonomy suggestions, helping identify recurring patterns in assets that need manual review.</p>
+          <p>Suggestions stay separate from the classification rules until you choose to apply them.</p>
+        </div>
+        <figure>
+          <img src="assets/images/04_Taxonomy_Suggestions.jpg" alt="Real Unity Editor screenshot of Taxonomy Suggestions, with suggestion settings, a minimum frequency of 3, and excluded tokens. No suggestions are listed yet.">
+          <figcaption>Taxonomy suggestions. Real in-editor screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <h2>What the tool does</h2>
+        <ul class="feature-grid">
+          <li>Automatic classification</li>
+          <li>Needs Review workflow</li>
+          <li>Persistent decisions</li>
+          <li>Categories and tags</li>
+          <li>Configurable classification rules</li>
+          <li>URP compatibility inspection</li>
+          <li>Separate URP material copies</li>
+          <li>Source assets preserved</li>
+          <li>Editor-only workflow</li>
+          <li>No runtime component</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="types">
+      <div class="wrap two">
+        <div>
+          <h2>Currently scanned</h2>
+          <ul class="plain">
+            <li>Prefabs / Models</li>
+            <li>Meshes</li>
+            <li>Materials</li>
+            <li>Textures</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Currently not scanned</h2>
+          <ul class="plain">
+            <li>Audio</li>
+            <li>VFX</li>
+            <li>UI</li>
+            <li>Animations</li>
+            <li>Shaders</li>
+            <li>Scenes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="requirements">
+      <div class="wrap">
+        <h2>Requirements</h2>
+        <dl class="specs">
+          <div>
+            <dt>Tested baseline</dt>
+            <dd>Unity 6.3, 6000.3.24f1</dd>
+          </div>
+          <div>
+            <dt>URP tested baseline</dt>
+            <dd>17.3.0</dd>
+          </div>
+          <div>
+            <dt>URP</dt>
+            <dd>Optional</dd>
+          </div>
+          <div>
+            <dt>Environment</dt>
+            <dd>Unity Editor only</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="wrap">
+        <h2>Build cleaner Unity workflows.</h2>
+        <p class="lede">Simba tools focuses on practical Editor utilities designed to reduce repetitive project work while keeping developers in control.</p>
+        <div class="actions">
+          <!-- Replace with Unity Asset Store product URL after publication -->
+          <a class="button" href="#asset-library-organizer">Asset Library Organizer</a>
+          <a class="button button-quiet" href="mailto:mathisdeschamps999@gmail.com">Contact Simba tools</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-name">Simba tools</p>
+        <p>Practical Unity Editor tools.</p>
+      </div>
+      <p>Contact:<br><a href="mailto:mathisdeschamps999@gmail.com">mathisdeschamps999@gmail.com</a></p>
+    </div>
+    <p class="legal wrap">© 2026 Simba tools. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
